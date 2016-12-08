@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justinoc03/travelites.git"
+    "url": ""
   },
-  "author": "",
+  "author": "Justin O'Connor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justinoc03/travelites/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/justinoc03/travelites#readme",
+  "homepage": "",
   "dependencies": {
+    "angular": "^1.6.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }
