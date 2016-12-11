@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
 
-    <script src="../vendors/angular.min.js" charset="utf-8"></script>
-    <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
-    <script src="../scripts/client.js" charset="utf-8"></script>
+    <!--Source Angular Materials-->
+    <!-- <link rel="stylesheet" href="styles/angular-material.min.css">
+    <script src="../vendors/angular-material.min.js" charset="utf-8"></script> -->
+
+    <!--Source Angular & Angular Routes-->
+    <script src="/vendors/angular.js"></script>
+    <script src="/vendors/angular-route.min.js"></script>
+    <script src="/scripts/client.js"></script>
+    <script src="/scripts/controllers/homeController.js"></script>
+    <script src="/scripts/controllers/whoWeAreController.js"></script>
+
+
 
     <title></title>
   </head>
 
   <!--///////////////////////////////////BODY//////////////////////////////////////-->
-  <body ng-controller>
+  <body>
     <h1>This Is The Index Page</h1>
 
+
+    <ul>
+      <!--Need To Add Logo for Home Page, not have a home button-->
+      <li><a href="#home">Home</a></li>
+      <li><a href="#whoWeAre">Who We Are</a>
+        <ul>
+          <li>Our Story</li>
+          <li>Leadership</li>
+          <li>Current TechFormants</li>
+        </ul>
+      </li>
+      <li>Projects
+        <ul>
+          <li>Current Projects</li>
+          <li>Past Projects</li>
+        </ul>
+      </li>
+    </ul>
+
+
+  <main ng-view></main>
+
+  <h4>footer test</h4>
   </body>
 </html>
