@@ -16,7 +16,11 @@ myApp.config(["$routeProvider", function($routeProvider){
         templateUrl: "/views/partials/whoWeAre.html",
         controller: "whoWeAreController"
       }).
+      when("/redirectNotice",{
+        templateUrl: "/views/partials/redirectNotice.html",
+        controller: "redirectNoticeController"
+      }).
       otherwise({
-        redirectTo: "/test"
+        redirectTo: "/redirectNotice"
       });
 }]);
