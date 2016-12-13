@@ -17,6 +17,6 @@ myApp.config(["$routeProvider", function($routeProvider){
         controller: "whoWeAreController"
       }).
       otherwise({
-        redirectTo: "/home"
+        redirectTo: "/test"
       });
 }]);
