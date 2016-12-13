@@ -1,4 +1,4 @@
-console.log('JS is sourced, YO');
+console.log('JS is sourced');
 
 //source in angular
 var myApp = angular.module("myApp", ['ngRoute']);
